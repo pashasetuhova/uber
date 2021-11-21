@@ -1,0 +1,451 @@
+header
+  position: relative
+  height: 50px
+
+  /* липкое меню
+
+nav
+  position: fixed
+  /* липкое меню
+  /* липкое меню
+  height: 50px
+  background-color: #212121
+  z-index: 2
+  width: 100%
+  /* липкое меню
+
+.hamburger
+  display: none
+
+.menu
+  display: flex
+  justify-content: space-between
+  padding: 13px 70px
+  margin: 0
+  list-style-type: none
+  /* убираем маркеры у списка
+
+  &_link
+    font-weight: 300
+    font-size: 15px
+    color: #FFFFFF
+    text-decoration: none
+    /* убираем нижнее подчеркивание ссылок
+
+  &_item
+    /* разделители между заголовками в хэдэре
+    border-right: 2px dotted black
+    padding-right: 28px
+    &:last-child
+        border-right: none
+
+.subheader
+  height: 94px
+  background-color: rgba(0, 0, 0, 0.4)
+
+  /* не используем здесь свойство opacity так как тогда и всё содержимое блока будет полупрозрачным
+  position: absolute
+  top: 50px
+
+  /* липкое меню
+  width: 100%
+
+  &_logo
+    display: block
+    max-width: 100%
+    margin-top: 16px
+
+  &_official
+    opacity: 0.5
+    font-weight: 400
+    font-size: 13px
+    color: #FFFFFF
+    margin-top: 6px
+
+  &_phone
+    display: block
+    margin-top: 8px
+    font-size: 22px
+    text-transform: uppercase
+    color: #FFFFFF
+    text-decoration: none
+    font-weight: 400
+    text-align: right
+    line-height: 24px
+
+  &_call
+    margin-top: 19px
+    font-weight: 300
+    font-size: 12px
+    line-height: 14px
+    color: #FFFFFF
+    text-align: right
+
+  &_btn
+    margin-top: 19px
+    border: none
+    border-radius: 4px
+    width: 172px
+    height: 46px
+    background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%)
+    box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12)
+    font-size: 14px
+    text-transform: uppercase
+    color: #FFFFFF
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
+    +btn_hover
+
+.promo
+  min-height: 800px
+  background: url(../img/bg/main_bg.jpg) center (center / cover) no-repeat
+  padding: 150px 0 135px 0
+  &_header
+    font-weight: 700
+    font-size: 60px
+    text-align: center
+    text-transform: uppercase
+    color: #FFFFFF
+    line-height: 60px
+    margin: 0
+    /* transform: translateY(84px);
+    /* позволяет подвинуть элемент, но мы выровняли всё релятивной и абсолютной позицией элементов
+  &_subheader
+    font-weight: 700
+    font-size: 36px
+    text-align: center
+    text-transform: uppercase
+    color: #FFFFFF
+    line-height: 36px
+    margin: 0
+    margin-top: 22px
+  &_descr
+    font-weight: 300
+    font-size: 18px
+    line-height: 24px
+    text-align: center
+    color: #FFFFFF
+    margin-top: 23px
+  &_btn
+    display: block
+    margin: 118px auto 0 auto
+    width: 259px
+    height: 63px
+    background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%)
+    box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12)
+    border: none
+    border-radius: 4px
+    font-size: 18px
+    text-transform: uppercase
+    font-weight: 400
+    color: #FFFFFF
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
+    +btn_hover
+
+.reasons
+  padding: 71px 0 65px 0
+  &_block
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-top: 35px
+  &_round
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-right: 26px
+    width: 113px
+    height: 113px
+    background-color: #1eacc7
+    border-radius: 100%
+  &_descr
+    width: 343px
+  &_subtitle
+    line-height: 21px
+    color: #1eacc7
+    font-size: 17px
+    font-weight: 400
+  &_text
+    color: black
+    font-size: 15px
+    font-weight: 300
+    line-height: 21px
+
+.label
+  position: relative
+  margin: 0 auto
+  height: 24px
+  width: 112px
+  padding: 5px 12px
+  background-color: #000000
+  color: #ffffff
+  font-size: 11px
+  font-weight: 300
+  text-transform: uppercase
+  text-align: center
+  z-index: 2
+  text-decoration: none
+  &_white
+    background: #fff
+    color: #000
+
+.title
+  position: relative
+  margin-bottom: 0
+  margin-top: 38px
+  color: #222222
+  font-size: 38px
+  font-weight: 700
+  text-transform: uppercase
+  text-align: center
+  z-index: 2
+  &_white
+    color: #fff
+
+.subtitle
+  position: relative
+  font-weight: 400px
+  font-size: 17px
+  line-height: 21px
+  color: #222222
+  text-align: center
+  z-index: 2
+  &_white
+    color: #fff
+
+.mobile
+  min-height: 864px
+  padding: 48px 0 79px 0
+  background: url('../img/bg/white_bg.jpg') center (center / cover) no-repeat
+  .row
+    margin-top: 32px
+  &_item
+    position: relative
+    width: 320px
+    height: 280px
+    /** opacity: 0.9 **/
+    margin: 0 auto
+    margin-bottom: 19px
+    &_1
+      background: url('../img/pics/driver.png') center (center / cover) no-repeat
+    &_2
+      background: url('../img/pics/prices.png') center (center / cover) no-repeat
+    &_3
+      background: url('../img/pics/order.png') center (center / cover) no-repeat
+    &_4
+      background: url('../img/pics/nocash.png') center (center / cover) no-repeat
+    &_5
+      background: url('../img/pics/feedback.png') center (center / cover) no-repeat
+    &_6
+      background: url('../img/pics/split.png') center (center / cover) no-repeat
+    &_subtitle
+      padding-top: 92px
+      color: white
+      text-transform: uppercase
+      font-size: 24px
+      font-weight: 400
+      line-height: 31px
+      text-align: center
+    &_plus
+      display: flex
+      justify-content: center
+      align-items: center
+      position: absolute
+      bottom: 35px /** абсолютное позиционирование согласно содержащего элемента **/
+      left: 50%
+      transform: translate(-50%) /** доп свойство для позиционирования **/
+      height: 26px
+      width: 26px
+      background: #000000
+      margin: 0 auto /** элемент строго по центру **/
+      border-radius: 100% /** элемент круглый **/
+      cursor: pointer
+      &:before
+        content: ''
+        display: block
+        width: 14px /** горизонтальная полоска плюсика **/
+        height: 2px 
+        background-color: $main-color
+        transition: 0.3 sec all
+      &:after
+        content: ''
+        position: absolute
+        left: 50%
+        transform: translateX(-50%) /** доп свойство для позиционирования **/
+        display: block
+        width: 2px 
+        height: 14px /** вертикальная полоска плюсика **/
+        background-color: $main-color
+        transition: 0.3 sec all
+      &:hover
+        &:before, &:after
+          background-color: $second-color
+        
+        
+.choice 
+	position: relative
+	min-height: 895px
+	padding: 57px 0 138px 0
+	background: url('../img/bg/white_bg.jpg') center (center / cover) no-repeat
+	&_img 
+		position: relative
+		display: block
+		margin: 56px auto 0 auto
+		z-index: 2
+	&_descr 
+		text-align: center
+		color: #222222
+		font-size: 17px
+		font-weight: 300
+		line-height: 24px
+	.black 
+		position: absolute 
+		top: 0
+		left: 0
+		height: 499px
+		width: 100%
+		background-color: #070716
+		z-index: 1
+
+.require
+  padding: 68px 0 84px 0
+  &_block
+    margin: 33px 0
+    &_nmb
+      margin-bottom: 0px
+  &_title
+    color: $main-color
+    font-size: 22px
+    font-weight: 400
+  &_list
+    list-style-type: none
+    padding-left: 25px
+    margin-top: 22px
+    li
+      /** display: inline-block **/
+      /** position: relative **/
+      font-size: 17px
+      font-weight: 300
+      line-height: 24px
+      margin-bottom: 10px
+      &::before
+        content: ''
+        /** display: block **/
+        /** position: absolute **/
+        /** left: -32px **/
+        /** top: 50% **/
+        /** transform: translateY(-50%) **/
+        display: inline-block
+        vertical-align: middle
+        transform: translate(-2px, -3px)
+        width: 21px
+        height: 20px
+        background: url('../img/icons/blue_icon.png') center (center / cover) no-repeat
+        margin-right: 5px
+  &_descr
+    margin-top: 25px
+    font-size: 17px
+    font-weight: 300
+    line-height: 24px
+    color: $main-color
+  .warning
+    .require_title
+      color: $second-color
+    .require_list
+      li
+        &::before
+          background: url('../img/icons/red_icon.png') center (center / cover) no-repeat
+
+.world
+  position: relative
+  min-height: 717px
+  padding: 49px 0
+  background: url('../img/bg/map_bg.jpg') center (center / cover) no-repeat
+  &_link
+    position: absolute
+    left: 50%
+    transform: translateX(-50%)
+    bottom: 49px
+    text-align: center
+    font-size: 15px
+    font-weight: 400
+    text-transform: uppercase
+    color: $main-color
+    text-decoration: none
+    &:hover 
+      color: #fff
+
+footer 
+  padding: 4px 23px 25px 23px
+  a 
+    &:hover 
+      text-decoration: none
+.footer
+  &_divider
+    margin: 15px auto
+    width: 299px
+    height: 4px
+    background-color: $main-color
+  &_wrapper
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    /** padding-top: 12px **/
+    /** margin-bottom: 15px **/
+  &_wrapper > div /** только там, где есть див внутри обертки **/
+    width: 33%
+    &:nth-child(3)
+      display: flex 
+      justify-content: flex-end
+  &_social
+    width: 160px
+    display: flex
+    justify-content: space-between
+    a
+      text-decoration: none
+    &_item 
+      display: flex 
+      justify-content: center
+      align-items: center
+      margin: 0 4px
+      width: 32px
+      height: 32px
+      background-color: #070716
+      border-radius: 100%
+      i
+        color: #fff
+  &_links
+    width: 100%
+    margin: 0 auto
+    text-decoration: none
+    &_main 
+      display: flex
+      justify-content: space-between
+      padding: 0 10px
+      a 
+        color: #070716
+        font-size: 15px
+        font-weight: 300
+        text-transform: uppercase
+        text-decoration: none
+    &_sub 
+      display: flex 
+      justify-content: space-between
+      margin-top: 10px
+      a 
+        color: #999999
+        font-size: 11px
+        font-weight: 300
+        text-transform: uppercase
+        text-decoration: none
+    &_lang 
+      display: block 
+      margin: 0 auto
+      color: $main-color
+      font-size: 11px
+      font-weight: 400
+      margin-top: 19px
+      text-transform: uppercase
+      text-align: center
+      text-decoration: none
+.xs-visible
+    display: none
